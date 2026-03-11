@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "환영합니다!.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "환영합니다!"
+              "title": "README"
             }
           }
         ]
@@ -196,7 +196,8 @@
   },
   "active": "7edd998268f1bfd2",
   "lastOpenFiles": [
+    "환영합니다!.md",
     "README.md",
-    "환영합니다!.md"
+    "README.md"
   ]
 }
