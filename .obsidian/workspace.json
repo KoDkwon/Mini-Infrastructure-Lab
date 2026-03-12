@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "c1a5bc814132569e",
@@ -196,7 +196,10 @@
   },
   "active": "7edd998268f1bfd2",
   "lastOpenFiles": [
-    "환영합니다!.md",
-    "README.md"
+    "README (1).md",
+    "README.md",
+    "무제.md",
+    "README.md",
+    "환영합니다!.md"
   ]
 }
