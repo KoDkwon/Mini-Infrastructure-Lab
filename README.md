@@ -1,21 +1,21 @@
-# 🖥️ Mini Infrastructure Lab
+# Mini Infrastructure Lab
 
 > IDC 환경에서 실제 운영 인프라를 2대의 물리 서버로 재현한 홈랩 프로젝트.
 > 네트워크 설계, 방화벽 구성, HA, 모니터링, CI/CD까지 전 과정을 직접 구축.
 
 ---
 
-## 📋 Overview
+## Overview
 
 실제 운영 환경과 동일한 구조를 소규모로 재현하여 인프라 설계 및 운영 능력을 직접 검증하는 것을 목표로 합니다.
 
-- **기간**: 2026.03 ~ 진행 중
+- **기간**: 2024.03 ~ 진행 중
 - **목적**: 실무 수준의 인프라 설계/구축/운영 경험 확보
 - **핵심 주제**: 가상화, 네트워크 분리(VLAN), 방화벽 정책, HA, 스토리지, 모니터링, CI/CD
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 [인터넷/외부망]
@@ -45,7 +45,7 @@
 
 ---
 
-## 🛠️ Stack
+## Stack
 
 | 분류 | 기술 |
 |------|------|
@@ -65,7 +65,7 @@
 
 ---
 
-## 💻 Hardware
+## Hardware
 
 | 항목 | 스펙 |
 |------|------|
@@ -79,7 +79,7 @@
 
 ---
 
-## 💾 Storage Design
+## Storage Design
 
 ### RAID 구성 (서버당 동일)
 
@@ -106,11 +106,11 @@
 | **서버당 총 가용** | **4TB** | **4TB** |
 | **전체 합산** | | **8TB** |
 
-> ⚠️ NODE-02 md1 여유 약 100GB로 빠듯. Wazuh 인덱스 보존 기간 단축 또는 백업 정책 조정 필요.
+> NODE-02 md1 여유 약 100GB로 빠듯. Wazuh 인덱스 보존 기간 단축 또는 백업 정책 조정 필요.
 
 ---
 
-## 🌐 Network Design
+## Network Design
 
 ### VLAN 구성
 
@@ -146,7 +146,7 @@ eth3 → VLAN60  Access (Monitoring)     eth3 → VLAN60  Access (Monitoring)
 
 ---
 
-## 🖥️ VM 구성
+## VM 구성
 
 ### NODE-01 (20코어/40스레드, 64GB RAM)
 
@@ -173,7 +173,7 @@ eth3 → VLAN60  Access (Monitoring)     eth3 → VLAN60  Access (Monitoring)
 
 ---
 
-## 🔥 Firewall Policy (OPNsense)
+## Firewall Policy (OPNsense)
 
 | OPNsense 인터페이스 | 연결 VLAN | 역할 |
 |--------------------|----------|------|
@@ -193,7 +193,7 @@ eth3 → VLAN60  Access (Monitoring)     eth3 → VLAN60  Access (Monitoring)
 
 ---
 
-## ✅ 진행 현황
+## 진행 현황
 
 ### Phase 1 - 기반 구축
 - [ ] XCP-ng 설치 (NODE-01, NODE-02)
@@ -227,7 +227,7 @@ eth3 → VLAN60  Access (Monitoring)     eth3 → VLAN60  Access (Monitoring)
 
 ---
 
-## 📝 진행 일지
+## 진행 일지
 
 ### [Phase 1] 기반 구축
 
